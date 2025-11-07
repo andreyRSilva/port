@@ -17,24 +17,37 @@ Tenho experiência com Python, automações, APIs e desenvolvimento de aplicaç�
 # Habilidades
 st.markdown("## 🧠 Habilidades")
 st.markdown("""
-- ✅ Python e automações
-- ✅ Streamlit para apps interativos
-- ✅ Integração com APIs (Telegram, ViaCEP, AwesomeAPI)
-- ✅ Lógica de programação e estrutura de dados
+- ✅ Python e automações  
+- ✅ Streamlit para apps interativos  
+- ✅ Integração com APIs (Telegram, ViaCEP, AwesomeAPI)  
+- ✅ Lógica de programação e estrutura de dados  
 """)
 
-# Projetos
+# Projetos com links
 st.markdown("## 🚀 Projetos")
 projetos = {
-    "Consulta de CEP": "App que consulta dados de endereço via API do ViaCEP.",
-    "Cotação do Dólar": "Consulta em tempo real da cotação do dólar usando AwesomeAPI.",
-    "Monitoramento de Frota": "Interface para atualizar status de ônibus em tempo real.",
-    "Bot Telegram": "Integração com Telegram para envio de mensagens automatizadas."
+    "Consulta de CEP": {
+        "descricao": "App que consulta dados de endereço via API do ViaCEP.",
+        "link": "https://github.com/seuusuario/consulta-cep"
+    },
+    "Cotação do Dólar": {
+        "descricao": "Consulta em tempo real da cotação do dólar usando AwesomeAPI.",
+        "link": "https://github.com/seuusuario/cotacao-dolar"
+    },
+    "Monitoramento de Frota": {
+        "descricao": "Interface para atualizar status de ônibus em tempo real.",
+        "link": "https://github.com/seuusuario/monitoramento-frota"
+    },
+    "Bot Telegram": {
+        "descricao": "Integração com Telegram para envio de mensagens automatizadas.",
+        "link": "https://github.com/seuusuario/bot-telegram"
+    }
 }
 
-for nome, descricao in projetos.items():
+for nome, dados in projetos.items():
     with st.expander(f"📌 {nome}"):
-        st.write(descricao)
+        st.write(dados["descricao"])
+        st.markdown(f"[🔗 Acessar projeto]({dados['link']})")
 
 # Contato
 st.markdown("## 📬 Contato")
