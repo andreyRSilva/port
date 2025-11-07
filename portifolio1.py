@@ -1,3 +1,4 @@
+
 import streamlit as st
 
 # Configuração da página
@@ -41,6 +42,10 @@ projetos = {
     "Bot Telegram": {
         "descricao": "Integração com Telegram para envio de mensagens automatizadas.",
         "link": "https://github.com/seuusuario/bot-telegram"
+    },
+    "Verificador de Situação Escolar": {
+        "descricao": "Calcula a média de notas e determina se o aluno está aprovado, em recuperação ou reprovado.",
+        "link": "https://github.com/seuusuario/verificador-situacao-escolar"
     }
 }
 
@@ -53,5 +58,14 @@ for nome, dados in projetos.items():
 st.markdown("## 📬 Contato")
 st.write("Você pode me encontrar nas redes abaixo ou enviar um e-mail:")
 
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown("[LinkedIn](https://www.linkedin.com/in/seuusuario)")
+    st.markdown("[GitHub](https://github.com/seuusuario)")
+with col2:
+    st.markdown("[Instagram](https://instagram.com/seuusuario)")
+    st.markdown("📧 Email: seuemail@exemplo.com")
 
-
+# Rodapé
+st.markdown("---")
+st.caption("Feito com ❤️ usando Streamlit")
