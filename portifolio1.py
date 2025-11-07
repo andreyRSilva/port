@@ -53,14 +53,5 @@ for nome, dados in projetos.items():
 st.markdown("## 📬 Contato")
 st.write("Você pode me encontrar nas redes abaixo ou enviar um e-mail:")
 
-col1, col2 = st.columns(2)
-with col1:
-    st.markdown("[LinkedIn](https://www.linkedin.com/in/seuusuario)")
-    st.markdown("[GitHub](https://github.com/seuusuario)")
-with col2:
-    st.markdown("[Instagram](https://instagram.com/seuusuario)")
-    st.markdown("📧 Email: seuemail@exemplo.com")
 
-# Rodapé
-st.markdown("---")
-st.caption("Feito com ❤️ usando Streamlit")
+
